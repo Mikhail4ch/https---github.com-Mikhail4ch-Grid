@@ -1,0 +1,89 @@
+.grid-container {
+display: grid;
+grid-template-rows: 0.01fr 1.2fr 0.8fr 0.7fr;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 10px;
+grid-template-areas: 
+"nav header header header"
+"nav main main main"
+"nav aside aside  aside  "
+"nav footer footer footer"
+;
+height: 100%;
+}
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+ aside {
+  grid-area: aside;
+ }
+ main {
+  grid-area: main;
+ }
+ footer {
+  grid-area: footer;
+ }
+* {
+  width: 1fr;
+  height: 1.9fr;
+}
+.grid-container .image {
+width: 100%;
+max-width: 26rem;
+height: 26rem;
+display: inline-block;
+overflow: hidden;
+margin-top: 15rem;
+}
+.grid-container .image img{
+  width: 35%;
+  height: 35%;
+  object-fit: cover;
+  margin-left: 3rem;
+  margin-top: 11rem;
+}
+.grid-container .imagine {
+width: 100%;
+max-width: 66rem;
+height: 25rem;
+display: inline-block;
+overflow: hidden;
+}
+.grid-container .imagine img {
+  width: 100%;
+  height: 100%;
+}
+.grid-container .kreg {
+ width: 100%;
+max-width: 66rem;
+height: 19.5rem;
+display: inline-block;
+overflow: hidden;
+}
+.grid-container .kreg img{
+  width: 30%;
+  height: 100%;
+  margin-left: 1.2rem;
+}
+.grid-container .last {
+  width: 100%;
+max-width: 66rem;
+height: 18rem;
+display: inline-block;
+overflow: hidden;
+}
+.grid-container .last img{
+  width: 45%;
+  height: 100%;
+  margin-left: 1.8rem;
+}
+
+
+
+
+
+
+  
